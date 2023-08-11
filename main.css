@@ -1,10 +1,13 @@
 @import url(fontawesome-all.min.css);
 
 :root{
-	--color1: #000;
-	--color2: #fff;
-	--color3: #d0ffd7;
-	--color4: #64c27b;
+	--color1: #dddbd1;
+	--color2: #adafaa;
+	--color3: #666d70;
+	--color4: #d6ddd6;
+	--color5: #c9cec4;
+
+	--letras: black;
 }
 
 html, body, div, span, applet, object,
@@ -171,11 +174,11 @@ input, vvselect, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: var(--color2);
+			color: var(--letras);
 		}
 
 	strong, b {
-		color: var(--color2);
+		color: var(--letras);
 		font-weight: bold;
 	}
 
@@ -188,12 +191,15 @@ input, vvselect, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: var(--color1);
+		color: var(--letras);
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
-
+		p, span, li, a
+		{
+			color: var(--letras);
+		}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -1848,7 +1854,7 @@ input, vvselect, textarea {
 		border: solid 1px !important;
 		border-color: var(--color1) !important;
 		border-radius: 3em;
-		color: var(--color2) !important;
+		color: var(--letras) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1928,7 +1934,7 @@ input, vvselect, textarea {
 		button.primary,
 		.button.primary {
 			background-color: var(--color1);
-			color: var(--color1) !important;
+			color: var(--letras) !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2000,26 +2006,17 @@ input, vvselect, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		border-radius: 0.25em;
-		border: solid 1px var(--color1);
-		background: rgba(0, 0, 0, 0.05);
+
+		background: var(--color2);
 		margin: 0 0 2em 0;
 	}
-
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
-			border-top: solid 1px var(--color1);
 			position: relative;
 		}
 
-			.features section:nth-child(-n + 2) {
-				border-top-width: 0;
-			}
 
-			.features section:nth-child(2n) {
-				border-left: solid 1px var(--color1);
-			}
 
 			.features section .icon {
 				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
@@ -2308,7 +2305,7 @@ input, vvselect, textarea {
 		}
 
 	label {
-		color: var(--color1);
+		color: var(--letras);
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2326,7 +2323,7 @@ input, vvselect, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(0, 0, 0, 0.05);
+		background: var(--color1);
 		border-radius: 0.25em;
 		border: none;
 		border: solid 1px var(--color1);
@@ -2368,7 +2365,7 @@ input, vvselect, textarea {
 	}
 
 		select option {
-			color: var(--color2);
+			color: var(--letras);
 			background: var(--color2);
 		}
 
@@ -2412,7 +2409,7 @@ input, vvselect, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: var(--color1);
+			color: var(--letras);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2457,7 +2454,7 @@ input, vvselect, textarea {
 		input[type="radio"]:checked + label:before {
 			background: var(--color2);
 			border-color: var(--color1);
-			color: var(--color1);
+			color: var(--letras);
 			content: '\f00c';
 		}
 
@@ -2476,22 +2473,22 @@ input, vvselect, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: var(--color1) !important;
+		color: var(--letras) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: var(--color1) !important;
+		color: var(--letras) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: var(--color1) !important;
+		color: var(--letras) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: var(--color1) !important;
+		color: var(--letras) !important;
 		opacity: 1.0;
 	}
 
@@ -2538,7 +2535,7 @@ input, vvselect, textarea {
 			display: block;
 			background: var(--color2);
 			border-radius: 100%;
-			color: var(--color1);
+			color: var(--letras);
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2549,27 +2546,27 @@ input, vvselect, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: var(--color1);
+					color: var(--letras);
 				}
 
 /* Image */
@@ -2880,7 +2877,7 @@ input, vvselect, textarea {
 	}
 
 	header p {
-		color: var(--color1);
+		color: var(--letras);
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -3171,7 +3168,7 @@ input, vvselect, textarea {
 		}
 
 		table th {
-			color: var(--color1);
+			color: var(--letras);
 			font-size: 1em;
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -3396,7 +3393,7 @@ input, vvselect, textarea {
 
 		#header > .title {
 			border: 0;
-			color: var(--color1);
+			color: var(--letras);
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3428,7 +3425,7 @@ input, vvselect, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: var(--color1);
+						color: var(--letras);
 						display: inline-block;
 						font-size: 0.6em;
 						font-weight: bold;
@@ -3437,11 +3434,11 @@ input, vvselect, textarea {
 					}
 
 						#header > nav > ul > li a:hover {
-							color: var(--color1);
+							color: var(--letras);
 						}
 
 						#header > nav > ul > li a.active {
-							color: var(--color1);
+							color: var(--letras);
 						}
 
 		@media screen and (max-width: 736px) {
@@ -3756,7 +3753,7 @@ input, vvselect, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: var(--color1);
+			color: var(--letras);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3796,11 +3793,11 @@ input, vvselect, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: var(--color1);
+				color: var(--color3);
 			}
 
 			#sidebar nav a.active {
-				color: var(--color1);
+				color: var(--color3);
 			}
 
 				#sidebar nav a.active:after {
